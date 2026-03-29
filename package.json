@@ -1,0 +1,26 @@
+{
+  "name": "wanderers-path",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "^0.0.9",
+    "jimp": "^1.6.0",
+    "sharp": "^0.34.5",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/qrcode-terminal": "^0.12.2",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
