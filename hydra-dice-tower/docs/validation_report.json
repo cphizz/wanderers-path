@@ -1,0 +1,209 @@
+{
+ "parts": {
+  "body": {
+   "extents_mm": [
+    135.4,
+    134.1,
+    111.4
+   ],
+   "fits_AD5X": true,
+   "min_z": -0.001,
+   "watertight": true,
+   "manifold": "Error.NoError",
+   "triangles": 694258,
+   "volume_cm3": 694.6
+  },
+  "neck_center": {
+   "extents_mm": [
+    93.5,
+    75.3,
+    107.5
+   ],
+   "fits_AD5X": true,
+   "min_z": -0.0,
+   "watertight": true,
+   "manifold": "Error.NoError",
+   "triangles": 418172,
+   "volume_cm3": 141.4
+  },
+  "neck_left": {
+   "extents_mm": [
+    90.9,
+    75.7,
+    103.5
+   ],
+   "fits_AD5X": true,
+   "min_z": -0.0,
+   "watertight": true,
+   "manifold": "Error.NoError",
+   "triangles": 418132,
+   "volume_cm3": 144.4
+  },
+  "neck_right": {
+   "extents_mm": [
+    91.0,
+    75.7,
+    103.4
+   ],
+   "fits_AD5X": true,
+   "min_z": -0.0,
+   "watertight": true,
+   "manifold": "Error.NoError",
+   "triangles": 418096,
+   "volume_cm3": 144.4
+  },
+  "tray": {
+   "extents_mm": [
+    104.5,
+    90.6,
+    19.0
+   ],
+   "fits_AD5X": true,
+   "min_z": -0.0,
+   "watertight": true,
+   "manifold": "Error.NoError",
+   "triangles": 119994,
+   "volume_cm3": 34.0
+  }
+ },
+ "overlaps": {
+  "body x neck_center": {
+   "overlap_mm3": 0.0
+  },
+  "body x neck_left": {
+   "overlap_mm3": 0.0
+  },
+  "body x neck_right": {
+   "overlap_mm3": 0.0
+  },
+  "neck_center x neck_left": {
+   "overlap_mm3": 0.0
+  },
+  "neck_center x neck_right": {
+   "overlap_mm3": 0.0
+  }
+ },
+ "internal_overhangs": {
+  "body": {
+   "internal_area_cm2": 213.1,
+   "internal_area_over_50deg_mm2": 7.8,
+   "pct": 0.037
+  },
+  "neck_center": {
+   "internal_area_cm2": 105.1,
+   "internal_area_over_50deg_mm2": 13.4,
+   "pct": 0.127
+  },
+  "neck_left": {
+   "internal_area_cm2": 110.3,
+   "internal_area_over_50deg_mm2": 12.3,
+   "pct": 0.111
+  },
+  "neck_right": {
+   "internal_area_cm2": 110.2,
+   "internal_area_over_50deg_mm2": 12.6,
+   "pct": 0.114
+  }
+ },
+ "passage": {
+  "ball_34mm": {
+   "center": {
+    "enters": true,
+    "reaches_exit": true,
+    "trap_voxels": 530,
+    "trap_locations": {
+     "inside_tower": 0,
+     "outside_on_lips_or_jaw": 530,
+     "lowest_inside": null
+    },
+    "trap_example": [
+     -25.8,
+     32.1,
+     182.0
+    ]
+   },
+   "left": {
+    "enters": true,
+    "reaches_exit": true,
+    "trap_voxels": 269,
+    "trap_locations": {
+     "inside_tower": 0,
+     "outside_on_lips_or_jaw": 269,
+     "lowest_inside": null
+    },
+    "trap_example": [
+     70.8,
+     41.9,
+     168.0
+    ]
+   },
+   "right": {
+    "enters": true,
+    "reaches_exit": true,
+    "trap_voxels": 429,
+    "trap_locations": {
+     "inside_tower": 0,
+     "outside_on_lips_or_jaw": 429,
+     "lowest_inside": null
+    },
+    "trap_example": [
+     -100.0,
+     48.2,
+     169.4
+    ]
+   }
+  },
+  "ball_36mm": {
+   "center": {
+    "enters": true,
+    "reaches_exit": false,
+    "trap_voxels": 7791,
+    "trap_locations": {
+     "inside_tower": 44,
+     "outside_on_lips_or_jaw": 7747,
+     "lowest_inside": [
+      0.1,
+      -2.2,
+      111.3
+     ]
+    },
+    "trap_example": [
+     -27.2,
+     31.4,
+     185.5
+    ]
+   },
+   "left": {
+    "enters": true,
+    "reaches_exit": true,
+    "trap_voxels": 609,
+    "trap_locations": {
+     "inside_tower": 0,
+     "outside_on_lips_or_jaw": 609,
+     "lowest_inside": null
+    },
+    "trap_example": [
+     70.8,
+     41.9,
+     170.8
+    ]
+   },
+   "right": {
+    "enters": true,
+    "reaches_exit": true,
+    "trap_voxels": 547,
+    "trap_locations": {
+     "inside_tower": 0,
+     "outside_on_lips_or_jaw": 547,
+     "lowest_inside": null
+    },
+    "trap_example": [
+     -100.0,
+     48.2,
+     170.8
+    ]
+   }
+  },
+  "largest_ball_passing_all_mouths_mm": 35.9
+ }
+}

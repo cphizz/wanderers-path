@@ -1,0 +1,4 @@
+blender/parts_colored/
+__pycache__/
+*.blend1
+stl/_body_cavity.npz

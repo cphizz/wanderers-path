@@ -1,0 +1,17 @@
+[
+ {
+  "name": "body",
+  "faces": 694258,
+  "watertight": true,
+  "winding_consistent": true,
+  "manifold_status": "Error.NoError",
+  "volume_cm3": 694.6,
+  "genus": 6,
+  "extents_mm": [
+   135.4,
+   134.1,
+   111.4
+  ],
+  "seconds": 150
+ }
+]
