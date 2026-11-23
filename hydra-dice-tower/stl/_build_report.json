@@ -1,17 +1,17 @@
 [
  {
-  "name": "body",
-  "faces": 694258,
+  "name": "tray",
+  "faces": 119998,
   "watertight": true,
   "winding_consistent": true,
   "manifold_status": "Error.NoError",
-  "volume_cm3": 694.6,
-  "genus": 6,
+  "volume_cm3": 32.3,
+  "genus": 0,
   "extents_mm": [
-   135.4,
-   134.1,
-   111.4
+   104.5,
+   90.6,
+   19.0
   ],
-  "seconds": 150
+  "seconds": 3
  }
 ]

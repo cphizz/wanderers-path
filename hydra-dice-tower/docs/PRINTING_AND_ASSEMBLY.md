@@ -29,7 +29,7 @@ never needs to put support inside the dice channels.
 | Seam | "Back" / aligned rear | Aligned, rear | Any |
 
 Why **build plate only**: with "everywhere", a slicer can still seed tiny
-supports on the internal ramp under the inlet funnels. Those can't be removed
+supports on the internal ramp inside the body. Those can't be removed
 through the openings, and they'd become dice snags. With "build plate only",
 supports go only under the belly, arms, chin and tail.
 
@@ -73,19 +73,23 @@ dish you can flood with paint), plus a white dot.
    - Wobbly: a wrap of thin tape on the spigot, or 3–4 small dots of CA glue.
      **Leaving the necks unglued is recommended**, so a neck can be lifted off
      to clear a stuck die or a non-standard die.
-5. Put the **tray** behind the hydra with its low wall against the rump, so it
-   sits under the arch. A self-adhesive felt sheet in the tray floor makes it
+5. Put the **tray** behind the hydra with its **low (3.5 mm) wall** against the
+   rump, right under the arch. The tall back wall catches the dice. A self-adhesive felt sheet in the tray floor makes it
    much quieter.
 
 ## Using it
 
 Drop any standard die (d4 … d20, up to ~26 mm) into any mouth. It drops
-through the neck, lands on the 42° impact deflector, tumbles over two 6 mm steps
-on the 32° ramp, and "plops" out of the rear arch into the tray.
+through the S-curved neck into the body. Dice from the middle mouth fall
+straight down onto a steep deflector; dice from the side mouths run down a 40°
+tube. Everything then rolls down a 34° ramp under an arched roof and plops out of
+the rear arch, over the tray's low front lip.
 
 ## If a die ever sticks
 
-- Lift the neck off (it isn't glued) and tip the die out.
+- A tap on the hydra's back usually frees it (in simulation the only place a die
+  ever stopped was a d4 on the slope where a side tube meets the ramp).
+- Otherwise lift the neck off (it isn't glued) and tip the die out.
 - Very large or unusually shaped dice (metal d20s over 26 mm, novelty dice)
   are outside what was tested. See `docs/validation_report.json` and
   `docs/dice_simulation.json` for what was verified.

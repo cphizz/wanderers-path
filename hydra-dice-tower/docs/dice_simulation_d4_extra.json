@@ -1,0 +1,52 @@
+{
+ "results": {
+  "d4 via center mouth": {
+   "drops": 60,
+   "reached_tray": 59,
+   "mean_time_s": 1.76,
+   "stuck_positions": [
+    [
+     21.3,
+     -14.7,
+     54.5
+    ]
+   ]
+  },
+  "d4 via left mouth": {
+   "drops": 60,
+   "reached_tray": 57,
+   "mean_time_s": 2.26,
+   "stuck_positions": [
+    [
+     26.2,
+     -13.7,
+     57.1
+    ],
+    [
+     27.9,
+     -2.1,
+     63.6
+    ],
+    [
+     15.0,
+     -26.3,
+     46.7
+    ]
+   ]
+  },
+  "d4 via right mouth": {
+   "drops": 60,
+   "reached_tray": 59,
+   "mean_time_s": 1.97,
+   "stuck_positions": [
+    [
+     10.9,
+     -40.7,
+     34.0
+    ]
+   ]
+  }
+ },
+ "fairness_d6": null,
+ "sample_d20_trajectories_mm": {}
+}

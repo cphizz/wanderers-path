@@ -350,7 +350,7 @@ def body_core(p):
     d = sd_ellipsoid(p, (0, -6, 36), (54, 48, 42))                 # belly / lower body
     d = smin(d, sd_ellipsoid(p, (0, 2, 72), (36, 33, 30)), 22)     # chest
     d = smin(d, sd_ellipsoid(p, (0, -26, 28), (50, 40, 34)), 18)   # rump
-    d = smin(d, sd_ellipsoid(p, (0, -28, 56), (38, 32, 34)), 20)   # lower back
+    d = smin(d, sd_ellipsoid(p, (0, -28, 56), (40, 36, 34)), 20)   # lower back (thick enough over the exit arch)
     for sg in (-1, 1):                                              # chunky shoulders
         d = smin(d, sd_ellipsoid(p, (sg * 28, -12, 72), (24, 30, 26)), 16)
     return d
@@ -441,6 +441,7 @@ Y_EXIT = -62.0
 Z_EXIT = 14.0                 # floor height where the exit tube leaves the rump
 RAMP_DEG = 34.0               # main ramp slope toward the rear exit
 SIDE_PATH = [(16.0, -22.0, 63.3), (6.0, -40.0, 49.9)]   # side inlet tubes run down to the ramp here (x mirrored)
+JUNCTION_FILLET = 8.0      # smooth-union radius where inlet tubes meet the ramp tunnel (no lips/snags)
 
 
 def floor_profile(y):
@@ -467,7 +468,7 @@ def chamber(p):
     x, y, z = p[:, 0], p[:, 1], p[:, 2]
     d_floor = floor_height(x, y) - z
     tun = np.maximum.reduce([d_floor, np.abs(x) - EXIT_HALF_W, z - tunnel_roof(x, y),
-                             y - 16.0, -(y + 100.0)])
+                             y - 4.0, -(y + 100.0)])
     return tun
 
 
@@ -509,7 +510,11 @@ def body_cavity(p):
         t = np.maximum(t, nk.joint_h(p) - SPIGOT_H - 0.01)   # through the spigot
         # never let an inlet tube dig below the funnel floor (that would be a dice trap)
         t = np.maximum(t, floor_height(p[:, 0], p[:, 1]) - p[:, 2])
-        c = np.minimum(c, t)
+        # side tubes: smooth union rounds off the edge where the tube's round bottom meets the
+        # tunnel wall (no lip for a pointy d4 to hook on).  Centre trunk: plain union.
+        c = smin(c, t, JUNCTION_FILLET) if abs(nk.J[0]) > 1 else np.minimum(c, t)
+    # ...but never below the ramp surface (a fillet must not dig a pocket into the floor)
+    c = np.maximum(c, floor_height(p[:, 0], p[:, 1]) - p[:, 2])
     return c
 
 
@@ -598,7 +603,7 @@ TRAY_IN = (98.0, 84.0)     # inner width (x), inner depth (y)
 TRAY_WALL = 2.6
 TRAY_FLOOR = 2.4
 TRAY_H_BACK = 18.0
-TRAY_H_FRONT = 8.0
+TRAY_H_FRONT = 3.5     # low near wall: the exit lip (~9 mm up) must clear it
 
 
 def _rbox2(x, y, hx, hy, r):

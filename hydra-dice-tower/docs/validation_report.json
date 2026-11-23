@@ -10,8 +10,8 @@
    "min_z": -0.001,
    "watertight": true,
    "manifold": "Error.NoError",
-   "triangles": 694258,
-   "volume_cm3": 694.6
+   "triangles": 699910,
+   "volume_cm3": 701.2
   },
   "neck_center": {
    "extents_mm": [
@@ -62,8 +62,8 @@
    "min_z": -0.0,
    "watertight": true,
    "manifold": "Error.NoError",
-   "triangles": 119994,
-   "volume_cm3": 34.0
+   "triangles": 119998,
+   "volume_cm3": 32.3
   }
  },
  "overlaps": {
@@ -85,9 +85,9 @@
  },
  "internal_overhangs": {
   "body": {
-   "internal_area_cm2": 213.1,
-   "internal_area_over_50deg_mm2": 7.8,
-   "pct": 0.037
+   "internal_area_cm2": 213.7,
+   "internal_area_over_50deg_mm2": 14.2,
+   "pct": 0.066
   },
   "neck_center": {
    "internal_area_cm2": 105.1,
